@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="LuuhArt's 3D — Impressões 3D personalizadas em Araras-SP. Baixe o app, peça orçamento pelo WhatsApp." />
+  <title>LuuhArt's 3D | Impressões 3D personalizadas — Araras/SP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#03030f; --cyan:#00f0ff; --purple:#b026ff; --pink:#ff2bd6; --text:#eef6ff; --muted:#8a9bb8; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.5; }
+    .wrap { max-width:720px; margin:0 auto; padding:24px 18px 80px; }
+    .hero { text-align:center; padding:32px 0 24px; }
+    .hero img { width:min(100%,420px); filter:drop-shadow(0 0 28px rgba(0,240,255,.4)); }
+    .hero h1 { font-family:Orbitron,sans-serif; font-size:1.6rem; margin-top:16px;
+      background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink));
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .hero p { color:var(--muted); margin-top:8px; font-size:1.05rem; }
+    .cta { display:flex; flex-direction:column; gap:12px; margin:28px 0; }
+    .btn { display:block; text-align:center; padding:16px 20px; border-radius:14px;
+      font-weight:700; font-size:1.05rem; text-decoration:none; color:#03030f;
+      background:linear-gradient(135deg,var(--cyan),var(--purple),var(--pink));
+      box-shadow:0 0 24px rgba(0,240,255,.25); }
+    .btn-outline { background:transparent; color:var(--cyan); border:2px solid var(--cyan); box-shadow:none; }
+    .btn-wa { background:#25d366; color:#fff; box-shadow:0 4px 16px rgba(37,211,102,.35); }
+    .section { margin:36px 0; }
+    .section h2 { font-family:Orbitron,sans-serif; font-size:1.15rem; color:var(--cyan); margin-bottom:12px; }
+    .cards { display:grid; gap:12px; }
+    @media (min-width:560px){ .cards{ grid-template-columns:1fr 1fr; } }
+    .card { background:#0a0a1c; border:1px solid #1a2540; border-radius:14px; padding:16px; }
+    .card h3 { font-size:1rem; margin-bottom:6px; }
+    .card p { font-size:.9rem; color:var(--muted); }
+    .qr-box { text-align:center; background:#0a0a1c; border:1px solid #1a2540; border-radius:16px; padding:20px; margin:20px 0; }
+    .qr-box img { background:#fff; padding:10px; border-radius:12px; }
+    .footer { text-align:center; color:var(--muted); font-size:.85rem; margin-top:40px; }
+    .footer a { color:var(--cyan); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <img src="../www/logo.jpg" alt="LuuhArt's 3D" onerror="this.style.display='none'" />
+      <h1>LuuhArt's 3D</h1>
+      <p>Impressões 3D personalizadas · Araras-SP</p>
+    </div>
+
+    <div class="cta">
+      <!-- Após publicar o APK no GitHub Releases, troque o href abaixo -->
+      <a class="btn" id="btn-apk" href="https://github.com/DiegoFogari/luuharts-3d/releases/latest">
+        📲 Baixar o App (Android)
+      </a>
+      <a class="btn btn-outline" href="https://diegofogari.github.io/luuharts-3d/">
+        🌐 Abrir loja no navegador
+      </a>
+      <a class="btn btn-wa" href="https://wa.me/5516997828851?text=Ol%C3%A1%20Luiza%20Helena!%20Vim%20pelo%20site%20da%20LuuhArt%27s%203D." target="_blank" rel="noopener">
+        💬 WhatsApp — Luiza Helena (16) 99782-8851
+      </a>
+    </div>
+
+    <div class="qr-box">
+      <p style="margin-bottom:10px;color:var(--muted)">QR Code → loja online</p>
+      <img width="180" height="180" alt="QR Loja"
+        src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fdiegofogari.github.io%2Fluuharts-3d%2F" />
+      <p style="margin-top:14px;color:var(--muted)">QR Code → WhatsApp Luiza Helena</p>
+      <img width="180" height="180" alt="QR WhatsApp" style="margin-top:8px"
+        src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fwa.me%2F5516997828851" />
+    </div>
+
+    <div class="section">
+      <h2>O que oferecemos</h2>
+      <div class="cards">
+        <div class="card"><h3>🛍️ Produtos prontos</h3><p>Vasos, suportes, organizadores, miniaturas — pronta entrega.</p></div>
+        <div class="card"><h3>📐 Orçamento por encomenda</h3><p>Envie seu STL/OBJ no app e receba orçamento prévio no WhatsApp.</p></div>
+        <div class="card"><h3>💚 PIX com valor exato</h3><p>QR Code gerado com o total do seu carrinho. Cartão até 12x na Ton.</p></div>
+        <div class="card"><h3>📦 Frete SEDEX</h3><p>Origem Araras-SP. Frete calculado e pago pelo cliente nos Correios.</p></div>
+      </div>
+    </div>
+
+    <div class="section" id="download">
+      <h2>Baixar o aplicativo Android</h2>
+      <p style="color:var(--muted);margin-bottom:12px">
+        O APK fica em <a href="https://github.com/DiegoFogari/luuharts-3d/releases" style="color:var(--cyan)">GitHub Releases</a>.
+        No celular: abra o link → permita instalar de fontes desconhecidas → instalar.
+      </p>
+    </div>
+
+    <div class="footer">
+      <p>LuuhArt's 3D · Araras-SP</p>
+      <p><a href="https://wa.me/5516997828851">WhatsApp (16) 99782-8851 — Luiza Helena</a></p>
+      <p><a href="https://github.com/DiegoFogari">github.com/DiegoFogari</a></p>
+    </div>
+  </div>
+</body>
+</html>
 
